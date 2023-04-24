@@ -1,0 +1,230 @@
+body.page {
+  overflow-y: auto;
+  padding: 0 !important; }
+
+.category-academy .page:before {
+  display: none; }
+
+.page.nobg:before {
+  display: none; }
+
+.blog__block-level {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 !important; }
+  .blog__block-level span {
+    line-height: 35px;
+    padding: 0 17px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    background: #ebae0b;
+    margin: 0; }
+    .blog__block-level span.beginner {
+      background: #1c8744; }
+    .blog__block-level span.advanced {
+      background: #871c3a; }
+    .blog__block-level span.level {
+      background: #434885; }
+.blog__blockswrap {
+  gap: 20px 0;
+  margin-top: 30px; }
+  .blog__blockswrap > div {
+    padding: 0 20px;
+    border-left: 1px solid #383665;
+    display: flex;
+    align-items: center;
+    min-height: 40px; }
+    .blog__blockswrap > div:first-child {
+      border-left: 0; }
+  .blog__blockswrap .blog__block-data, .blog__blockswrap .blog__block-time {
+    padding-left: 25px; }
+@media screen and (max-width: 767px) {
+  .blog__blockswrap {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap; }
+    .blog__blockswrap > div {
+      padding: 0;
+      border: 0; } }
+
+.category__top {
+  position: relative;
+  z-index: 1; }
+.category__description {
+  line-height: 1.3;
+  font-size: 20px;
+  margin-top: 40px;
+  z-index: 1;
+  position: relative;
+  padding-right: 60%; }
+  .category__description p:first-child {
+    margin-top: 0; }
+  .category__description p:last-child {
+    margin-bottom: 0; }
+  .category__description-wrap {
+    position: relative; }
+  .category__description-img {
+    position: absolute;
+    top: -40px;
+    right: -30px;
+    left: 40%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .category__description-img img {
+      display: block; }
+@media screen and (max-width: 767px) {
+  .category__description {
+    padding: 0;
+    font-size: 16px; }
+    .category__description-img {
+      display: none; } }
+
+.filter {
+  padding: 30px 60px;
+  background: #070837;
+  margin-top: 60px;
+  position: relative;
+  border-radius: 23px; }
+  .filter__top {
+    gap: 20px; }
+    .filter__top-title {
+      font-size: 18px;
+      color: #cccccc;
+      margin-bottom: 10px; }
+  .filter__bottom {
+    padding-top: 30px;
+    border-top: 1px solid #39395f;
+    margin-top: 30px;
+    gap: 20px;
+    justify-content: flex-end; }
+    .filter__bottom-clear {
+      border: 0;
+      padding: 0 0 0 20px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      background: url(https://www.AiBunnyerc.com/images/clearfilter.png) 0 50% no-repeat;
+      color: #fff; }
+    .filter__bottom .blue {
+      padding: 0 30px;
+      background: #3162f6;
+      box-shadow: 0 4px 0 #1b378c; }
+      .filter__bottom .blue:hover {
+        box-shadow: none; }
+  .filter__topics {
+    gap: 13px; }
+    .filter__topics label {
+      cursor: pointer; }
+      .filter__topics label input {
+        display: none; }
+        .filter__topics label input:checked + span {
+          background: #434885 url(https://www.AiBunnyerc.com/images/filter_plus_check.png) calc(100% - 14px) 15px no-repeat; }
+      .filter__topics label span {
+        display: block;
+        line-height: 40px;
+        padding: 0 35px 0 15px;
+        border-radius: 10px;
+        background: #30324c url(https://www.AiBunnyerc.com/images/filter_plus.png) calc(100% - 14px) 15px no-repeat; }
+  .filter__level {
+    gap: 13px; }
+    .filter__level label {
+      cursor: pointer; }
+      .filter__level label input {
+        display: none; }
+        .filter__level label input:checked + span {
+          background-image: url(https://www.AiBunnyerc.com/images/filter_plus_check.png);
+          background-color: #1c8744; }
+          .filter__level label input:checked + span.intermediate {
+            background-color: #ebae0b; }
+          .filter__level label input:checked + span.advanced {
+            background-color: #871c3a; }
+      .filter__level label span {
+        display: block;
+        line-height: 40px;
+        padding: 0 35px 0 15px;
+        border-radius: 10px;
+        border: 1px solid #1c8744;
+        background: url(https://www.AiBunnyerc.com/images/filter_plus.png) calc(100% - 14px) 15px no-repeat; }
+        .filter__level label span.intermediate {
+          border-color: #ebae0b; }
+        .filter__level label span.advanced {
+          border-color: #871c3a; }
+  .filter__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.3);
+    margin: 70px 0 30px; }
+    .filter__close.active span {
+      display: none; }
+      .filter__close.active span + span {
+        display: flex; }
+      .filter__close.active span em {
+        transform: rotate(180deg); }
+    .filter__close span {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 0 25px 0 25px;
+      position: relative; }
+      .filter__close span + span {
+        display: none; }
+      .filter__close span em {
+        width: 14px;
+        height: 8px;
+        background: url(https://www.AiBunnyerc.com/images/filterclose.png) 0 0 no-repeat;
+        margin-left: 10px; }
+      .filter__close span:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -9999999px;
+        right: 100%;
+        height: 1px;
+        background: #fff;
+        opacity: 0.3; }
+      .filter__close span:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -9999999px;
+        left: 100%;
+        height: 1px;
+        background: #fff;
+        opacity: 0.3; }
+  @media screen and (max-width: 767px) {
+    .filter {
+      padding: 15px 20px; }
+      .filter__bottom {
+        justify-content: center; }
+      .filter__close {
+        margin: 30px 0 0; } }
+
+.morepost {
+  margin-top: 190px; }
+  .morepost h2 {
+    text-align: center; }
+  .morepost__all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px; }
+    .morepost__all a {
+      padding-right: 35px;
+      background: url(https://www.AiBunnyerc.com/images/more.png) 100% 50% no-repeat;
+      text-align: center;
+      opacity: 0.5; }
+      .morepost__all a:hover {
+        opacity: 1; }
+  @media screen and (max-width: 991px) {
+    .morepost {
+      margin-top: 60px; }
+      .morepost__all {
+        margin-top: 40px; } }
+
+/*# sourceMappingURL=filter.css.map */

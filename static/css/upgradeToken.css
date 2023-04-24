@@ -1,0 +1,41 @@
+#upgradeToken {
+    padding-top: 3rem;
+}
+
+#headerUpgradeToken {
+    padding-bottom: 1rem !important;
+    padding-top: 1rem !important;
+}
+
+#textUpgradeToken {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    text-align: justify;
+}
+@media screen and (max-width:900px) {
+	#textUpgradeToken {
+		font-size: 0.8rem;
+	}
+}
+@media screen and (min-width:901px) {
+	#textUpgradeToken {
+		font-size: 1rem;
+	}
+}
+
+#footerUpgradeToken {
+    padding-top: 1rem !important;
+    padding-bottom: 0 !important;
+}
+
+#linkToDocUpgradeToken {
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #3162f6 !important;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#linkToDocUpgradeToken:hover {
+    text-decoration: underline;
+}
